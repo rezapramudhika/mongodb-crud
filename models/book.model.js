@@ -109,8 +109,8 @@ module.exports = {
                     reject(obj);
                 }
                 const db = client.db('library');
-                var myquery = { isbn: requestData.isbn };
-                var newvalues = {
+                let myquery = { isbn: requestData.isbn };
+                let newvalues = {
                     $set: {
                         isbn: requestData.isbn,
                         title: requestData.title,

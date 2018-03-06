@@ -6,6 +6,6 @@ const { getBooks, insertBook, deleteBook, updateBook } = require('../controllers
 router.get('/', getBooks);
 router.post('/', insertBook);
 router.delete('/:isbn', deleteBook);
-router.put('/:isbn', updateBook);
+router.post('/:isbn', updateBook);
 
 module.exports = router;
